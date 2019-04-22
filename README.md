@@ -2,7 +2,7 @@
 
 ## Sudoku
 
-Basic Sudoku game I built in `python`, runs in the console (No GUI).
+Basic Sudoku game built in `python`, runs in the console (No GUI).
 
 ----------------------------------------------------
 ## Index
@@ -26,25 +26,23 @@ Press Submit(S) to check if your answers are correct.
 ----------------------------------------------------
 ## Game Features
 
-- 3 different difficulties
-  - Easy
-  - Medium
-  - Hard
-- A variety of boards to play from
-- Randomize and Clear
+- 3 playable difficulties, depending on amount of spaces to fill:
+  - Easy: 20
+  - Medium: 35
+  - Hard: 50
+
+- Up to 1 million randomly generated boards and countless generated puzzles.
 
 ----------------------------------------------------
 ## Controls
 
-|                       | TEXT                        |
-|-----------------------|-----------------------------|
-| Choose Difficulty     | Type <kbd>E, M or H</kbd>   |
-| Enter Box Coordinates | Type <kbd>LetterDigit</kbd> |
-| Choose box            | <kbd>left click</kbd>       |
-| Enter Number          | <kbd>1-9</kbd>              |
-| Quit            	    | Type <kbd>Q</kbd> 		  |
-| Submit			    | Type <kbd>S</kbd>	   	   	  |
-|-----------------------|-----------------------------|
+| ACTION                | COMMAND         |
+|-----------------------|-----------------|
+| Choose Difficulty     | <kbd>E</kbd>, <kbd>M</kbd> or <kbd>H</kbd>|
+| Enter Box Coordinates | (LetterDigit) eg. <kbd>A4</kbd>|
+| Enter Number          | <kbd>1-9</kbd>|
+| Quit            	    | <kbd>Q</kbd>|
+| Submit			    | <kbd>S</kbd>|
 
 ----------------------------------------------------
 ## Installation
