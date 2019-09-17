@@ -1,10 +1,11 @@
 # py_sudoku
 
+----------------------------------------------------
+
 ## Sudoku
 
 Basic Sudoku game built in `python`, runs in the console (No GUI).
 
-----------------------------------------------------
 ## Index
 
 - Rules
@@ -13,17 +14,14 @@ Basic Sudoku game built in `python`, runs in the console (No GUI).
 - Installation
 - License
 
-----------------------------------------------------
 ## Rules
 
 The objective is to fill the 9×9 grid with digits so that each column, each row, and each of the nine 3×3 subgrids that compose the grid contain all of the digits from 1 to 9.
 
 When placing a new digits you have to make sure it doesn't already exits on the same row, column or box in order to win.
 
-
 Press Submit(S) to check if your answers are correct.
 
-----------------------------------------------------
 ## Game Features
 
 - 3 playable difficulties, depending on amount of spaces to fill:
@@ -31,9 +29,15 @@ Press Submit(S) to check if your answers are correct.
   - Medium: 35
   - Hard: 50
 
-- Up to 1 million randomly generated boards and countless generated puzzles.
+- Over 1 million randomly generated unique boards and countless generated puzzles.
 
-----------------------------------------------------
+## Generating 362'880 Sudoku Boards from One Input
+
+No this is not clickbait, the function `get_random_puzzle()` in `puzzles.py` can generate 362'880 unique sudoku boards from just one inputted board.
+If you look at a completed sudoku board you will notice that if you replace all the "1"s with "2"s, and all the previous "2"s with "1"s the board is still valid. Using this idea, I will pick a random digit that I will use for all "1"s in the board. Next I will pick a second random digit, that is not equal to the first for all "2"s... Doing this for all 9 digits will completely randomize your grid.
+Notice `9! = 362'880`. If you do not want the pattern to be noticeable, you can add other boards that have the number locations differently. This is why there are 3 unique with unique locations, boards. So `3 * 9! = 1'088'640`.
+
+
 ## Controls
 
 | ACTION                | COMMAND         |
@@ -44,10 +48,7 @@ Press Submit(S) to check if your answers are correct.
 | Quit            	    | <kbd>Q</kbd>|
 | Submit			    | <kbd>S</kbd>|
 
-----------------------------------------------------
 ## Installation
-
-INSTALLATION INSTRUCTIONS:
 
 For MacOS/Linux:
 
@@ -63,14 +64,14 @@ Next, install some other packages using:
 
 Now clone our repo onto your computer:
 
-	$ git clone https://github.com/290squadsix/squad_six_repo.git
+	$ git clone https://github.com/martipk/py_sudoku.git
 
 Enter the repo directory:
 
-	$ cd squad_six_repo
+	$ cd py_sudoku
 
 You are done! To run the game, simply type the following:
 
-	$ python3 sudoku_gui.py
+	$ python3 sudoku_console.py
 
 
